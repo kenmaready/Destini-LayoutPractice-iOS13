@@ -23,7 +23,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="166" translatesAutoresizingMaskIntoConstraints="NO" id="Ate-3V-KuY">
                                 <rect key="frame" x="20" y="324" width="374" height="502"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="answer for game why won't the text wrap?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C14-2Z-Og4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C14-2Z-Og4">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="168"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -42,6 +42,9 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Button" titleAlignment="center">
                                                     <backgroundConfiguration key="background" cornerRadius="20" image="choice1Background"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="selectPath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4T-cb-3Aj"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pli-Hz-sIV" userLabel="Choice2Button">
                                                 <rect key="frame" x="0.0" y="96" width="374" height="72"/>
@@ -52,6 +55,9 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Button" titleAlignment="center">
                                                     <backgroundConfiguration key="background" cornerRadius="20" image="choice2Background"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="selectPath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u7s-iB-Amu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -75,6 +81,11 @@
                             <constraint firstItem="Ate-3V-KuY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-36" id="xWL-GX-frC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choice1Button" destination="YbZ-hy-vtb" id="ZtY-2v-O0Y"/>
+                        <outlet property="choice2Button" destination="pli-Hz-sIV" id="i4E-4F-iee"/>
+                        <outlet property="storyTextLabel" destination="C14-2Z-Og4" id="4iT-8R-W66"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
