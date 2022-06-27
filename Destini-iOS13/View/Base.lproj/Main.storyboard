@@ -17,69 +17,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="RaY-pu-PIr">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="RaY-pu-PIr">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="366" translatesAutoresizingMaskIntoConstraints="NO" id="Ate-3V-KuY">
-                                <rect key="frame" x="20" y="-416" width="374" height="1242"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C14-2Z-Og4">
+                                <rect key="frame" x="20" y="290" width="374" height="266"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="qCI-IF-gxm">
+                                <rect key="frame" x="0.0" y="684" width="414" height="168"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C14-2Z-Og4">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="708"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Z5Z-zp-iMs">
-                                        <rect key="frame" x="0.0" y="1074" width="374" height="168"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbZ-hy-vtb" userLabel="Choice1Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="72"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="72" id="Dx8-xG-aB4"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button" titleAlignment="center">
-                                                    <backgroundConfiguration key="background" cornerRadius="20" image="choice1Background"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="selectPath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4T-cb-3Aj"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pli-Hz-sIV" userLabel="Choice2Button">
-                                                <rect key="frame" x="0.0" y="96" width="374" height="72"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="72" id="I6i-Em-zmH"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button" titleAlignment="center">
-                                                    <backgroundConfiguration key="background" cornerRadius="20" image="choice2Background"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="selectPath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u7s-iB-Amu"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbZ-hy-vtb" userLabel="Choice1Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="PhI-3c-AhB"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button" titleAlignment="center">
+                                            <backgroundConfiguration key="background" cornerRadius="20" image="choice1Background"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectPath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4T-cb-3Aj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pli-Hz-sIV" userLabel="Choice2Button">
+                                        <rect key="frame" x="0.0" y="96" width="414" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="HYF-Rt-VYJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button" titleAlignment="center">
+                                            <backgroundConfiguration key="background" cornerRadius="20" image="choice2Background"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectPath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u7s-iB-Amu"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="Z5Z-zp-iMs" firstAttribute="top" secondItem="C14-2Z-Og4" secondAttribute="bottom" constant="36" id="IlS-GS-stn"/>
-                                    <constraint firstItem="C14-2Z-Og4" firstAttribute="leading" secondItem="Ate-3V-KuY" secondAttribute="leadingMargin" constant="20" id="fNN-iC-qEc"/>
-                                    <constraint firstItem="C14-2Z-Og4" firstAttribute="trailing" secondItem="Ate-3V-KuY" secondAttribute="trailingMargin" constant="20" id="mE3-Dc-b3h"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="RaY-pu-PIr" secondAttribute="bottom" id="8ZF-Tf-oT8"/>
-                            <constraint firstItem="RaY-pu-PIr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SUz-UZ-CwD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ate-3V-KuY" secondAttribute="trailing" constant="20" id="TRD-nU-9gv"/>
-                            <constraint firstItem="Ate-3V-KuY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ouT-2z-owI"/>
-                            <constraint firstAttribute="trailing" secondItem="RaY-pu-PIr" secondAttribute="trailing" id="rEb-PD-xhB"/>
-                            <constraint firstItem="Ate-3V-KuY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tjq-DI-H5Q"/>
-                            <constraint firstItem="RaY-pu-PIr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uwc-ku-ZRc"/>
-                            <constraint firstItem="Ate-3V-KuY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-36" id="xWL-GX-frC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qCI-IF-gxm" secondAttribute="trailing" id="4Wn-T4-gnM"/>
+                            <constraint firstItem="qCI-IF-gxm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LPk-yC-w8Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qCI-IF-gxm" secondAttribute="bottom" constant="10" id="dQx-fe-pq1"/>
                         </constraints>
                     </view>
                     <connections>
