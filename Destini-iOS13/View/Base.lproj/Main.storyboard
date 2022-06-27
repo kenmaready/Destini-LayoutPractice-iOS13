@@ -20,18 +20,18 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="RaY-pu-PIr">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="166" translatesAutoresizingMaskIntoConstraints="NO" id="Ate-3V-KuY">
-                                <rect key="frame" x="20" y="324" width="374" height="502"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="366" translatesAutoresizingMaskIntoConstraints="NO" id="Ate-3V-KuY">
+                                <rect key="frame" x="20" y="-416" width="374" height="1242"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C14-2Z-Og4">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="168"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C14-2Z-Og4">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="708"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Z5Z-zp-iMs">
-                                        <rect key="frame" x="0.0" y="334" width="374" height="168"/>
+                                        <rect key="frame" x="0.0" y="1074" width="374" height="168"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbZ-hy-vtb" userLabel="Choice1Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="72"/>
@@ -63,6 +63,7 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Z5Z-zp-iMs" firstAttribute="top" secondItem="C14-2Z-Og4" secondAttribute="bottom" constant="36" id="IlS-GS-stn"/>
                                     <constraint firstItem="C14-2Z-Og4" firstAttribute="leading" secondItem="Ate-3V-KuY" secondAttribute="leadingMargin" constant="20" id="fNN-iC-qEc"/>
                                     <constraint firstItem="C14-2Z-Og4" firstAttribute="trailing" secondItem="Ate-3V-KuY" secondAttribute="trailingMargin" constant="20" id="mE3-Dc-b3h"/>
                                 </constraints>
